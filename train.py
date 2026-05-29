@@ -23,7 +23,7 @@ warnings.filterwarnings('ignore')
 # ═══════════════════════════════════════════════════════════════
 
 # Update this path to where your PCB_DATASET folder lives in Drive
-BASE_DIR = Path("/srv/groups/group7/data/pcb-defects/PCB_DATASET")
+BASE_DIR = Path("/srv/groups/group7/data/pcb-defects/PCB_DATASET/PCB_DATASET")
 
 # Verify the structure
 DATASET_IMAGES      = BASE_DIR / "images"
@@ -37,7 +37,7 @@ print("Dataset found!")
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURATION 
 # ═══════════════════════════════════════════════════════════════
-OUTPUT_DIR        = Path("/outputs")
+OUTPUT_DIR        = Path("/srv/groups/group7/outputs")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MODEL_SAVE_PATH   = OUTPUT_DIR / "pcb_defect_classifier_colab.keras"
